@@ -8,12 +8,11 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-orange-500: oklch(70.5% 0.213 47.604);
-    --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-gray-50: oklch(98.5% 0.002 247.839);
-    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
@@ -223,23 +222,20 @@
   .justify-center {
     justify-content: center;
   }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
+  .bg-amber-600 {
+    background-color: var(--color-amber-600);
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
-  .bg-gray-500 {
-    background-color: var(--color-gray-500);
-  }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
   }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .font-serif {
     font-family: var(--font-serif);
@@ -258,6 +254,12 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .bg-blend-color-burn {
+    background-blend-mode: color-burn;
+  }
+  .bg-blend-color-dodge {
+    background-blend-mode: color-dodge;
   }
 }
 @property --tw-leading {
